@@ -1,14 +1,8 @@
 # react-native-textinput-animated
 
-<table>
-
-</td>
-<td>
+<p align="center">
 <image height="450" src="./exemple/input.gif">
-<td>
-
-</tr>
-</table>
+</p>
 
 ## Getting started
 
