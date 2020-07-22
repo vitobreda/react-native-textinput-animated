@@ -1,5 +1,15 @@
 # react-native-textinput-animated
 
+<table>
+
+</td>
+<td>
+<image height="450" src="./exemple/input.gif">
+<td>
+
+</tr>
+</table>
+
 ## Getting started
 
 `$ npm install react-native-textinput-animated --save`
