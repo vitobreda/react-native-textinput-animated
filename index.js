@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {View, TextInput, Animated} from 'react-native';
 
 export default function TextinputAnimated({
-  inputRef,
   label,
   keyboardType,
   ...props
@@ -12,7 +11,7 @@ export default function TextinputAnimated({
   const animation = new Animated.Value(0);
 
   function handleFocused() {
-    if (inputRef.current && inputRef.current.value !== undefined) {
+    if (haveText) {
       setIsFocused(true);
     } else {
       setIsFocused(false);
@@ -55,6 +54,7 @@ export default function TextinputAnimated({
     } else {
       setHaveText(true);
     }
+    props.onChangeText(textValue)
   }
 
   function handleBlur() {
@@ -90,10 +90,6 @@ export default function TextinputAnimated({
           handleText(value.nativeEvent.text);
         }}
         blurOnSubmit
-        ref={inputRef}
-        onChangeText={(value) => {
-          inputRef.current.value = value;
-        }}
       />
 
       {props.children && props.children}
