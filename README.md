@@ -15,16 +15,21 @@
 ## Usage
 
 ```javascript
-import React, { useRef } from "react";
+import React from "react";
 import TextinputAnimated from "react-native-textinput-animated";
 
 function App(props) {
-  const myInput = useRef(null);
+  const [text, setText] = React.usestate("");
 
   function handleInputValue() {
     myInput.current.value;
   }
 
-  return <TextinputAnimated label="My Input" inputRef={myInput} />;
+  return (
+    <TextinputAnimated
+      label="My Input"
+      onChangeText={(value) => setText(value)}
+    />
+  );
 }
 ```
