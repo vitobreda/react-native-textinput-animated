@@ -1,14 +1,18 @@
 import * as React from "react";
-import { View, TextInput, Animated, TextInputProps, StyleProp, StyleSheet, ViewStyle, TextStyle } from "react-native";
+import { View, TextInput, Animated, TextInputProps, StyleProp, StyleSheet, ViewStyle, TextStyle, KeyboardTypeOptions } from "react-native";
 
-interface InputProps extends TextInputProps {
+interface InputProps {
   fontColor: string;
   label: string;
   border: boolean;
   borderWeight: number;
   borderColor: string
-  containerStyle: StyleProp<ViewStyle>
-  fontStyle: StyleProp<TextStyle>
+  containerStyle: StyleProp<ViewStyle>;
+  fontStyle: StyleProp<TextStyle>;
+  onFocus: Function;
+  keyboardType: KeyboardTypeOptions;
+  secureTextEntry: boolean;
+  onChangeText: Function;
 }
 
 export const TextinputAnimated: React.FunctionComponent<InputProps> = (
