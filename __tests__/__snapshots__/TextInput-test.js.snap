@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 10,
+        "paddingTop": 18,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "color": "rgba(170, 184, 194, 1)",
+        "fontSize": 16,
+        "left": 10,
+        "position": "absolute",
+        "top": 35,
+        "zIndex": 2,
+      }
+    }
+  />
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    onBlur={[Function]}
+    onEndEditing={[Function]}
+    onFocus={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "fontSize": 16,
+          "height": 48,
+          "paddingLeft": 15,
+          "paddingTop": 10,
+        },
+        Object {
+          "borderBottomColor": "#555",
+          "borderBottomWidth": 1,
+        },
+      ]
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;
